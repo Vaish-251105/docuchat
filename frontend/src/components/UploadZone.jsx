@@ -15,7 +15,7 @@ export default function UploadZone({ onUploadSuccess }) {
       try {
         const formData = new FormData();
         formData.append("pdf", file);
-        const res = await api.post("/api/upload", formData);
+        const res = await api.post("/upload", formData);
         onUploadSuccess({ ...res.data, file });
       } catch (err) {
         setError(err.response?.data?.error || "Upload failed. Try again.");

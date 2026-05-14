@@ -150,7 +150,7 @@ export default function ChatInterface({ session, initialMessages, onMessagesUpda
     try {
       const history = msgList.slice(1).map((m) => ({ role: m.role === "user" ? "user" : "assistant", content: m.content }));
       const lastUserMsg = [...history].reverse().find((m) => m.role === "user");
-      const res = await api.post("/api/chat", {
+      const res = await api.post("/chat", {
         sessionId: session.sessionId,
         question: lastUserMsg?.content,
         history: history.slice(0, -1),
