@@ -226,7 +226,7 @@ This project is open source and available for personal and commercial use.
 
 ## 👨‍💻 Author
 
-Created by [Your Name/Organization]
+Created by VAISHNAVI SINGH.
 
 ---
 
