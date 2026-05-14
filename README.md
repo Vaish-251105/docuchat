@@ -2,7 +2,18 @@
 
 > An intelligent PDF chat application powered by AI. Upload any PDF document and have natural conversations about its content using advanced AI capabilities.
 
+## � Live Demo
+
+**Try DocuChat Online:**
+- 🌐 **Frontend:** [https://docuchat-va61.vercel.app](https://docuchat-va61.vercel.app)
+- ⚙️ **Backend API:** [https://docuchat-80p4.onrender.com](https://docuchat-80p4.onrender.com)
+
+Start uploading PDFs and chatting with AI right now!
+
+---
+
 ## 📋 Table of Contents
+- [Live Demo](#-live-demo)
 - [Overview](#overview)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
@@ -14,6 +25,7 @@
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Troubleshooting](#troubleshooting)
+- [Deployment](#deployment)
 
 ## 🎯 Overview
 
@@ -219,6 +231,36 @@ If you encounter module not found errors:
 rm -rf node_modules package-lock.json
 npm install
 ```
+
+## 🌐 Deployment
+
+DocuChat is deployed and available live online!
+
+### Frontend Deployment (Vercel)
+- **URL:** [https://docuchat-va61.vercel.app](https://docuchat-va61.vercel.app)
+- **Platform:** Vercel
+- **Features:** Auto-deploys from GitHub main branch
+
+### Backend Deployment (Render)
+- **URL:** [https://docuchat-80p4.onrender.com](https://docuchat-80p4.onrender.com)
+- **Platform:** Render
+- **Features:** Auto-deploys from GitHub main branch
+
+### How to Deploy Your Own
+
+#### Deploy Frontend to Vercel
+1. Push your code to GitHub
+2. Connect your repo to [Vercel](https://vercel.com)
+3. Set environment variables (API endpoint)
+4. Deploy with one click!
+
+#### Deploy Backend to Render
+1. Push your code to GitHub
+2. Connect your repo to [Render](https://render.com)
+3. Set environment variables:
+   - `GROQ_API_KEY` - Your Groq API key
+   - `PORT` - 5000 (default)
+4. Deploy with one click!
 
 ## 📄 License
 
